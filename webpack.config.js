@@ -2,17 +2,17 @@ const path = require("path");
 const nodeExternals = require('webpack-node-externals');
 
 const clientConfig = {
-  entry: path.resolve(__dirname,"develop","src","controller","main.tsx"),
+  entry: path.resolve(__dirname, "develop", "src", "view", "pages","index.tsx"),
   mode: "development",
   module: {
-    rules:[
+    rules: [
       {
-        test:/\.(tsx?|js)$/,
+        test: /\.(tsx?|js)$/,
         exclude: /node_modules/,
         use: "babel-loader",
       },
       {
-        test:/\.tsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: "ts-loader"
       },
@@ -22,43 +22,42 @@ const clientConfig = {
       },
     ],
   },
-  resolve:{
-    extensions: [".tsx",".ts",".js"],
-  },
-  output:{
-    filename: "main-bundle.js",
-    path: path.resolve(__dirname,"dist"),
-    publicPath:"/static/"
-  },
-  devServer : {
-    static : path.join(__dirname, "dist"),
-    compress : true,
-    historyApiFallback : true,
-    port : 8080,
-    hot : true,
-    open: true,
-},
-};
-const serverConfig = {
-  entry: path.resolve(__dirname, "develop","src", "controller", "app-server.ts"),
-  mode: "development",
-  module: {
-      rules: [
-          //TS로더
-          {
-              test: /\.tsx?$/,
-              exclude: /node_modules/,
-              use: "ts-loader",
-          },
-
-      ],
-  },
   resolve: {
-      extensions: [".tsx", ".ts", ".js"],
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-      filename: "server_bundle.js",
-      path: path.resolve(__dirname, "dist")
+    filename: "main-bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/"
+  },
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    compress: true,
+    historyApiFallback: true,
+    port: 8080,
+    hot: true,
+    open: true,
+  },
+};
+
+const serverConfig = {
+  entry: path.resolve(__dirname, "develop", "src", "controller", "app-server.ts"),
+  mode: "development",
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: "ts-loader",
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  output: {
+    filename: "server_bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
   target: "node",
   externals: [nodeExternals()],

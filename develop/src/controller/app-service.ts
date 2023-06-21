@@ -6,7 +6,8 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return ('Hello World!');
+  getHello(): string[] {
+    const data=["대","중","소"]
+    return data;
   }
 }
