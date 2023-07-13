@@ -8,4 +8,9 @@ export class AppController {
   getIndex(@Res() res: Response): void {
     res.sendFile(join(__dirname, 'public', 'index.html'));
   }
+
+  @Get('hello')
+  getText(): string {
+    return '<div>d</div>';
+  }
 }
