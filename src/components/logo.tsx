@@ -2,8 +2,8 @@ import React from "react";
 
 const logo:React.FC = () => {
   return (
-      <div>
-        <h1>Logo</h1>
+      <div className="mainLogoCss">
+        <h1>P_F</h1>
       </div>
     );
 }
