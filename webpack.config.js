@@ -32,7 +32,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js", ".jsx"],
+    extensions: ['.ts', '.tsx', '.js', '.json'],
   },
   plugins: [
     new ESLintPlugin({
@@ -44,8 +44,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "index.bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'public'),
+    filename: 'index.bundle.js',
+    publicPath: '/',
   },
   devServer: {
     static: {
