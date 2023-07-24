@@ -25,3 +25,7 @@
   background-size : 100% 100%;
   background-image: url("../asset/housedrawing.png");
 }
+.mainImageButtonCss {
+  border: 1px solid black;
+  border-radius: 50%;
+}
