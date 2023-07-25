@@ -26,6 +26,7 @@
   background-image: url("../asset/housedrawing.png");
 }
 .mainImageButtonCss {
-  border: 1px solid black;
-  border-radius: 50%;
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
 }
