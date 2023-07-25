@@ -3,13 +3,15 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Main from "./containers/main";
+import Favorite from "./containers/favorite";
 
 function Index() {
   return (
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/d" element={<Main />} />
+        <Route path="/" element={<Favorite />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,0 +1,12 @@
+.favoriteCss {
+  width:400px;
+  height:850px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.favoriteIntroCss {
+  font-weight: bold;
+  font-size: 40px;
+}
