@@ -2,13 +2,14 @@ import React from "react";
 import Logo from "../components/logo"
 import "../styles/favorite.css"
 import FavoriteIntro from "../components/favoriteIntro"
-import "../styles/favorite.css"
+import FavoriteBody from "../components/favoriteBody";
 
 const main:React.FC = () => {
   return (
     <div className="favoriteCss">
       <Logo />
       <FavoriteIntro />
+      <FavoriteBody />
     </div>
   )
 }
