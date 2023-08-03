@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import Main from "./containers/main";
 import Favorite from "./containers/favorite";
 import Page404 from "./containers/page404";
+import LearnAndWrite from "./containers/learnAndWrite";
 
 function Index() {
   return (
@@ -13,7 +14,8 @@ function Index() {
       <Routes>
         <Route path="/d" element={<Main />} />
         <Route path="/favorite" element={<Favorite />} />
-        <Route path="/" element={<Page404 />} />
+        <Route path="/" element={<LearnAndWrite />} />
+        <Route path="/page404" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
