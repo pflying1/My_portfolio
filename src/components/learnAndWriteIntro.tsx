@@ -1,16 +1,16 @@
 import React from 'react';
 
-const favoriteIntro: React.FC = () => {
+const learnAndWriteIntro: React.FC = () => {
   return (
-    <div className='favoriteIntroCss'>
+    <div className='learnAndWriteIntroCss'>
       <br />
       <br />
-      <div className='favoriteIntroWrapCss'>
-        <div className='favoriteIntroTextCss'>배움과 기록의 방</div>
-        <div className='favoriteIntroTextCss'>방</div>
+      <div className='learnAndWriteIntroWrapCss'>
+        <div className='learnAndWriteIntroTextCss'>배움과 기록의 방</div>
+        <div className='learnAndWriteIntroTextCss'>방</div>
       </div>
     </div>
   );
 };
 
-export default favoriteIntro;
+export default learnAndWriteIntro;
