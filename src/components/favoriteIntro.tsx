@@ -1,16 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const favoriteIntro: React.FC = () => {
+const learnAndWriteBody :React.FC = () => {
   return (
-    <div className='favoriteIntroCss'>
-      <br />
-      <br />
-      <div className='favoriteIntroWrapCss'>
-        <div className='favoriteIntroTextCss'>여유와 취미의</div>
-        <div className='favoriteIntroTextCss'>방</div>
+    <div className="learnAndWriteBodyCss">
+        <div className="learnAndWriteBodyCss">
+        <div className="learnAndWriteBodyTextCss">Favorites</div>
+        </div>
       </div>
-    </div>
-  );
-};
+  )
+}
 
-export default favoriteIntro;
+export default learnAndWriteBody;
