@@ -72,7 +72,28 @@
   font-size: 20px;
 }
 
-.learnAndWriteBodyRecipeImageWrapCss {
+.learnAndWriteBodyRecipeImage1WrapCss {
+  color: white;
+  font-size: 20px;
+  width : 100%;
+  height: 80%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size : 100% 100%;
+  background-image: url("../asset/temporaryImage.jpg");
+}
+.learnAndWriteBodyRecipeImage2WrapCss {
+  color: white;
+  font-size: 20px;
+  width : 100%;
+  height: 80%;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size : 100% 100%;
+  /* background-image: url("../asset/temporaryImage.jpg"); */
+}
+
+.learnAndWriteBodyRecipeImage3WrapCss {
   color: white;
   font-size: 20px;
   width : 100%;
