@@ -19,6 +19,17 @@ const learnAndWriteBody: React.FC = () => {
             <div className='learnAndWriteBodyTextCss'>버스</div>
           </div>
         </div>
+        <div className='learnAndWriteBodyGithubWrapCss'>
+          <div>Github url : </div>
+          <div>바뀔내용</div>
+        </div>
+        <div className='learnAndWriteBodyNotionWrapCss'>
+          <div>Notion url : </div>
+          <div>바뀔내용</div>
+        </div>
+        <div className='learnAndWriteBodyRecipeImageWrapCss'>
+          <div></div>
+        </div>
       </div>
     </div>
   );
