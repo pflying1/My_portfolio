@@ -6,15 +6,16 @@ import Main from "./containers/main";
 import Favorite from "./containers/favorite";
 import Page404 from "./containers/page404";
 import LearnAndWrite from "./containers/learnAndWrite";
-
+import LuckAndFood from "./containers/luckAndFood";
 function Index() {
   return (
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/d" element={<Main />} />
+        <Route path="/" element={<LuckAndFood />} />
         <Route path="/favorite" element={<Favorite />} />
-        <Route path="/" element={<LearnAndWrite />} />
+        <Route path="/learnAndWrite" element={<LearnAndWrite />} />
         <Route path="/page404" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
