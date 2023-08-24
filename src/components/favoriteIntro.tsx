@@ -1,13 +1,13 @@
 import React from "react";
 
-const learnAndWriteBody :React.FC = () => {
+const favoriteIntro :React.FC = () => {
   return (
-    <div className="learnAndWriteBodyCss">
-        <div className="learnAndWriteBodyCss">
-        <div className="learnAndWriteBodyTextCss">Favorites</div>
+    <div className="favoriteIntroCss">
+        <div className="favoriteIntroCss">
+        <div className="favoriteIntroTextCss">Favorites</div>
         </div>
       </div>
   )
 }
 
-export default learnAndWriteBody;
+export default favoriteIntro;
