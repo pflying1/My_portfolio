@@ -9,7 +9,7 @@ const mainImage :React.FC = () => {
             <button className="mainImageButtonCss" style = {{ border: "1px solid #C5DFF8", backgroundColor: "#C5DFF8", position: "absolute", marginLeft:"180px", marginTop:"25px"}}>질문과 응답의 방</button>
           </Link>
 
-          <Link to="/luckAndFood">
+          <Link to="/page404">
             <button className="mainImageButtonCss" style = {{ border: "1px solid #FF9B9B", backgroundColor: "#FF9B9B", position: "absolute", marginLeft:"260px", marginTop:"185px"}}>운과 음식의 방</button>
           </Link>
 

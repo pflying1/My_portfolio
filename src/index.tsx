@@ -12,11 +12,11 @@ function Index() {
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/d" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/luckAndFood" element={<LuckAndFood />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/learnAndWrite" element={<LearnAndWrite />} />
-        <Route path="/" element={<Page404 />} />
+        <Route path="/page404" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
